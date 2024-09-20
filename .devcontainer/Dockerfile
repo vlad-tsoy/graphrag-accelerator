@@ -1,4 +1,5 @@
-FROM python:3.10
+FROM --platform=linux/amd64 python:3.10
+ENV DOTNET_EnableWriteXorExecute=0
 
 # avoid common warnings
 ENV DEBIAN_FRONTEND=noninteractive
